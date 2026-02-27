@@ -5,19 +5,19 @@ title: AI-Powered Developer Productivity Platform
 description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
 hero:
   links:
-    - label: Get started
-      icon: i-lucide-arrow-right
+    - label: Nuxt Studio
+      icon: i-tabler-brand-nuxt
       trailing: true
       color: primary
-      to: https://ui.nuxt.com/docs/getting-started/installation/nuxt
+      to: https://nuxt.studio/
       target: _blank
       size: xl
-    - label: Clone on GitHub
-      icon: i-simple-icons-github
+    - label: Nuxt Content
+      icon: i-tabler-brand-nuxt
       size: xl
       color: neutral
       variant: outline
-      to: https://github.com/nuxt-ui-templates/landing
+      to: https://content.nuxt.com/
       target: _blank
 section:
   title: '[Revolutionize]{.text-primary} your coding experience'
