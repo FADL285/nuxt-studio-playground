@@ -10,16 +10,33 @@ defineProps<{
 
 <template>
   <UPageSection>
-    <div v-if="status === 'pending'" class="flex justify-center py-12">
-      <UIcon name="i-lucide-loader-2" class="animate-spin size-8 text-primary" />
+    <div
+      v-if="status === 'pending'"
+      class="flex justify-center py-12"
+    >
+      <UIcon
+        name="i-lucide-loader-2"
+        class="animate-spin size-8 text-primary"
+      />
     </div>
 
-    <div v-else-if="status === 'error'" class="text-center py-12">
-      <UIcon name="i-lucide-alert-triangle" class="size-8 text-error mb-2" />
-      <p class="text-muted">Failed to load products</p>
+    <div
+      v-else-if="status === 'error'"
+      class="text-center py-12"
+    >
+      <UIcon
+        name="i-lucide-alert-triangle"
+        class="size-8 text-error mb-2"
+      />
+      <p class="text-muted">
+        Failed to load products
+      </p>
     </div>
 
-    <div v-else-if="products?.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div
+      v-else-if="products?.length"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+    >
       <UPageCard
         v-for="product in products"
         :key="product.id"

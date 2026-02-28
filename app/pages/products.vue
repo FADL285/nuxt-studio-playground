@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import type { ProductsArCollectionItem, ProductsEnCollectionItem } from '@nuxt/content'
-import type { Collections } from '@nuxt/content'
-import type { Product, ProductsResponse } from '~/types/product'
+import type { ProductsArCollectionItem, ProductsEnCollectionItem, Collections } from '@nuxt/content'
+import type { ProductsResponse } from '~/types/product'
 
 const { locale } = useI18n()
 

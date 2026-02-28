@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import type { ContentArCollectionItem, ContentEnCollectionItem } from '@nuxt/content'
-import type { Collections } from '@nuxt/content'
+import type { ContentArCollectionItem, ContentEnCollectionItem, Collections } from '@nuxt/content'
 
 const { locale } = useI18n()
 

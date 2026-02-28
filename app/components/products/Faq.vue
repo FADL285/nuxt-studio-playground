@@ -18,7 +18,10 @@ const accordionItems = computed(() =>
 <template>
   <UPageSection>
     <template #title>
-      <MDC :value="title" unwrap="p" />
+      <MDC
+        :value="title"
+        unwrap="p"
+      />
     </template>
 
     <UContainer class="max-w-3xl">

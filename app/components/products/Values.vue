@@ -12,7 +12,10 @@ defineProps<{
 <template>
   <UPageSection :features="items">
     <template #title>
-      <MDC :value="title" unwrap="p" />
+      <MDC
+        :value="title"
+        unwrap="p"
+      />
     </template>
   </UPageSection>
 </template>
