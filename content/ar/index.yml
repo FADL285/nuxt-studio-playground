@@ -1,0 +1,165 @@
+title: منصة إنتاجية المطورين المدعومة بالذكاء الاصطناعي!
+cta:
+  title: مستعد لبناء صفحة هبوط مذهلة؟
+  description: انضم لآلاف المطورين الذين يبنون مع Nuxt و Nuxt UI. احصل على هذا القالب وابدأ الإطلاق اليوم.
+  links:
+    - label: ابدأ البناء
+      to: https://ui.nuxt.com/docs/getting-started/installation/nuxt
+      target: _blank
+      trailingIcon: i-lucide-arrow-left
+    - label: شاهد على GitHub
+      to: https://github.com/nuxt-ui-templates/landing
+      target: _blank
+      variant: subtle
+      icon: i-simple-icons-github
+description: عزّز إنتاجيتك البرمجية مع رؤى مدعومة بالذكاء الاصطناعي تخبرك متى وكيف تبرمج بأقصى كفاءة.
+features:
+  title: تحكّم في [إنتاجيتك]{.text-primary}
+  description: اجعل كل جلسة برمجة مثمرة مع التحليلات الذكية وتحسين سير العمل.
+  features:
+    - title: تتبع التركيز بالذكاء الاصطناعي
+      description: اكتشف ساعات البرمجة المثلى مع تحليل الذكاء الاصطناعي في الوقت الفعلي لأنماط إنتاجيتك.
+      icon: i-lucide-wand-sparkles
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: تنبيهات التشتت
+      description: احصل على إشعارات عندما ينحرف تركيزك وأعد انتباهك.
+      icon: i-lucide-bell-ring
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: مقتطفات الكود الذكية
+      description: احفظ وأعد استخدام كتل الكود المستخدمة بشكل متكرر لتحقيق الكفاءة.
+      icon: i-lucide-code-xml
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: وضع العمل العميق
+      description: احجب المشتتات وحدد جلسات برمجة منظمة مع مؤقتات بومودورو المدمجة.
+      icon: i-lucide-moon
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: رؤى تعاونية
+      description: زامن سير عملك مع زملائك وشاهد متى يكونون أكثر إنتاجية.
+      icon: i-lucide-mouse-pointer-2
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: تحليلات الأداء
+      description: تتبّع مقاييس البرمجة واحصل على رؤى لتعزيز سرعتك وجودة الكود.
+      icon: i-lucide-chart-line
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+hero:
+  links:
+    - label: Nuxt Studio
+      icon: i-tabler-brand-nuxt
+      trailing: true
+      color: primary
+      to: https://nuxt.studio/
+      target: _blank
+      size: xl
+    - label: Nuxt Content
+      icon: i-tabler-brand-nuxt
+      size: xl
+      color: neutral
+      variant: outline
+      to: https://content.nuxt.com/
+      target: _blank
+pricing:
+  title: اختر مسار [إنتاجيتك]{.text-primary}
+  description: أطلق كفاءة البرمجة المدعومة بالذكاء الاصطناعي مع خططنا المرنة. سواء كنت مطوراً فردياً أو جزءاً من فريق، لدينا الأدوات المثالية لتحقيق أقصى استفادة من سير عملك التطويري.
+  plans:
+    - title: المطور المحترف
+      description: مثالي للمطورين الأفراد الذين يركزون على تحقيق أقصى إنتاجية.
+      price: $199
+      billing_period: شهرياً
+      billing_cycle: يُدفع سنوياً
+      features:
+        - تتبع الإنتاجية بالذكاء الاصطناعي لتحسين ساعات البرمجة المثلى
+        - تنبيهات ذكية للمشتتات للحفاظ على التركيز العميق
+        - مكتبة مقتطفات كود شخصية لتطوير أسرع
+        - وضع العمل العميق مع تكامل مؤقت بومودورو
+        - لوحة تحليلات الأداء
+        - دعم بريد إلكتروني ذو أولوية
+      button:
+        label: اشترِ الآن
+        color: neutral
+        variant: outline
+        to: "#"
+    - title: مطور الفريق
+      description: للمبادرين ورواد الأعمال المستقلين.
+      price: $199
+      billing_period: شهرياً
+      billing_cycle: يُدفع سنوياً
+      features:
+        - كل شيء في خطة المطور المحترف
+        - تحليلات ورؤى إنتاجية الفريق
+        - مشاركة مقتطفات الكود التعاونية
+        - تتبع الأداء عبر الفرق
+        - جلسات عمل عميق متزامنة
+        - دعم فريق ذو أولوية مع مدير مخصص
+      button:
+        label: اشترِ الآن
+        variant: subtle
+        to: "#"
+section:
+  title: "[طوّر]{.text-primary} تجربتك البرمجية"
+  description: حوّل سير عملك التطويري مع رؤى مدعومة بالذكاء الاصطناعي وتحسين الإنتاجية المخصص.
+  images:
+    mobile: /images/macbook-mobile.svg
+    desktop: /images/macbook.svg
+  features:
+    - title: حسّن وقت تركيزك
+      description: دع الذكاء الاصطناعي يحدد ساعات البرمجة المثلى ويتكيف مع إيقاعك الطبيعي. ركّز على ما يهم - كتابة كود رائع، بينما يحسّن نظامنا أنماط إنتاجيتك.
+      class: border-r border-primary pr-4
+    - title: تتبّع أفضل ساعات البرمجة
+      description: تتبّع متى تبرمج بأفضل أداء مع تحليلات ذكية. احصل على رؤى قابلة للتنفيذ لمعالجة المهام الصعبة خلال ساعات ذروة أدائك.
+      class: border-r border-default pt-4 pr-4
+    - title: حسّن كفاءة سير العمل
+      description: أتمت تحسين سير عملك من مقتطفات الكود إلى إدارة التركيز. أنجز كوداً أفضل بشكل أسرع مع عملية تطوير مبسطة.
+      class: border-r border-default pt-4 pr-4
+seo:
+  title: قالب هبوط Nuxt
+  description: عزّز إنتاجيتك البرمجية مع رؤى مدعومة بالذكاء الاصطناعي تخبرك متى وكيف تبرمج بأقصى كفاءة.
+steps:
+  title: ابدأ البرمجة بذكاء في [3 خطوات]{.text-primary}
+  description: حوّل سير عملك التطويري مع مساعدنا المدعوم بالذكاء الاصطناعي.
+  items:
+    - title: اربط محرر الأكواد
+      description: تكامل سلس مع VS Code أو JetBrains أو محررك المفضل. ابدأ في أقل من دقيقتين بدون أي إعداد.
+      image:
+        light: /images/light/connect.svg
+        dark: /images/dark/connect.svg
+    - title: تتبّع وحلّل
+      description: يراقب ذكاؤنا الاصطناعي أنماط برمجتك بصمت لتحديد ساعات ذروة إنتاجيتك واختناقات سير العمل المحتملة.
+      image:
+        light: /images/light/optimize.svg
+        dark: /images/dark/optimize.svg
+    - title: حسّن وابرمج بذكاء
+      description: احصل على توصيات مخصصة لتعزيز كفاءتك البرمجية. شاهد إنتاجيتك ترتفع مع رؤى مبنية على البيانات.
+      image:
+        light: /images/light/track.svg
+        dark: /images/dark/track.svg
+testimonials:
+  title: انضم لآلاف المطورين [المنتجين]{.text-primary}
+  description: شاهد كيف يحوّل المطورون سير عملهم البرمجي ويحققون المزيد مع منصتنا المدعومة بالذكاء الاصطناعي.
+  items:
+    - quote: منذ استخدام هذه الأداة، تضاعفت إنتاجيتي. ساعدتني رؤى الذكاء الاصطناعي في إيجاد إيقاع برمجتي المثالي والآن أنجز الميزات بضعف السرعة.
+      user:
+        name: Sarah Moriceau
+        description: مصممة علامات تجارية
+        target: _blank
+        avatar:
+          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19
+    - quote: نقلة نوعية لفريقنا. ساعدنا تتبع التركيز والتنبيهات الذكية في تقليل مقاطعات الاجتماعات بنسبة 40% وزيادة سرعة السبرنت.
+      user:
+        name: Sébastien Chopin
+        description: مهندس برمجيات رئيسي
+        target: _blank
+        avatar:
+          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux
+    - quote: أخيراً، أداة إنتاجية تفهم المطورين. ساعدتني ميزات الذكاء الاصطناعي في تحديد ساعات البرمجة المثلى والآن أنجز أكثر في وقت أقل.
+      user:
+        name: Benjamin Canac
+        description: مطور واجهات أمامية أول
+        target: _blank
+        avatar:
+          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac
