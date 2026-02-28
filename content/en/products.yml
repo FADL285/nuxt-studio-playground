@@ -1,0 +1,31 @@
+title: Our Products
+description: Discover our premium collection of high-quality products
+faq:
+  title: Frequently Asked Questions
+  items:
+    - question: How can I track my order?
+      answer: After placing your order, you'll receive an email with a tracking number and a link to follow your shipment status.
+    - question: What payment methods are available?
+      answer: We accept credit cards (Visa, Mastercard), cash on delivery, and bank transfers.
+    - question: Can I change the delivery address after ordering?
+      answer: Yes, you can modify the delivery address within one hour of order confirmation by contacting customer service.
+    - question: What is the return policy?
+      answer: You can return the product within 30 days of receipt, provided it is in its original condition with complete packaging.
+hero:
+  title: Discover the **Best Products**
+  description: A carefully curated collection combining quality and modern design
+seo:
+  title: Products — Nuxt Hybrid Sandbox
+  description: Browse our diverse range of products and find what suits you
+value_propositions:
+  title: Why Shop With Us?
+  items:
+    - title: Fast Shipping
+      description: 24-hour delivery to all regions
+      icon: i-lucide-truck
+    - title: Quality Guarantee
+      description: All products undergo strict quality inspection
+      icon: i-lucide-shield-check
+    - title: 24/7 Support
+      description: Customer service team available around the clock
+      icon: i-lucide-headphones
