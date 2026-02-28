@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "features": "المميزات",
+    "pricing": "الأسعار",
+    "testimonials": "آراء العملاء",
+    "products": "المنتجات"
+  },
+  "pages": {
+    "privacyPolicy": "سياسة الخصوصية",
+    "returnPolicy": "سياسة الإرجاع"
+  },
+  "common": {
+    "downloadApp": "تحميل التطبيق",
+    "subscribe": "اشترك",
+    "enterEmail": "أدخل بريدك الإلكتروني",
+    "subscribeNewsletter": "اشترك في النشرة البريدية"
+  },
+  "footer": {
+    "builtWith": "صُنع بـ Nuxt UI"
+  }
+}
