@@ -14,7 +14,7 @@ export default eventHandler(async (event) => {
     return sendRedirect(event, '/')
   }
 
-  const html = await useStorage('assets:server').getItem('studio-login.html')
+  const html = await useStorage('assets:server').getItemRaw<string>('studio-login.html')
   setResponseHeader(event, 'content-type', 'text/html')
   return html
 })
