@@ -1,8 +1,3 @@
-import { readFile } from 'node:fs/promises'
-import { resolve } from 'node:path'
-
-const loginPagePath = resolve('./server/templates/studio-login.html')
-
 export default eventHandler(async (event) => {
   const { redirect } = getQuery(event)
 
@@ -19,7 +14,7 @@ export default eventHandler(async (event) => {
     return sendRedirect(event, '/')
   }
 
-  const html = await readFile(loginPagePath, 'utf-8')
+  const html = await useStorage('assets:server').getItem('studio-login.html')
   setResponseHeader(event, 'content-type', 'text/html')
   return html
 })
