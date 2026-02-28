@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 const columns = [{
   label: 'Resources',
   children: [{
@@ -63,20 +65,20 @@ function onSubmit() {
             <form @submit.prevent="onSubmit">
               <UFormField
                 name="email"
-                label="Subscribe to our newsletter"
+                :label="t('common.subscribeNewsletter')"
                 size="lg"
               >
                 <UInput
                   v-model="email"
                   type="email"
                   class="w-full"
-                  placeholder="Enter your email"
+                  :placeholder="t('common.enterEmail')"
                 >
                   <template #trailing>
                     <UButton
                       type="submit"
                       size="xs"
-                      label="Subscribe"
+                      :label="t('common.subscribe')"
                     />
                   </template>
                 </UInput>
@@ -89,7 +91,7 @@ function onSubmit() {
 
     <template #left>
       <p class="text-sm text-muted">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
+        {{ t('footer.builtWith') }} • © {{ new Date().getFullYear() }}
       </p>
     </template>
 

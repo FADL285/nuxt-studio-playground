@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "Nuxt Studio": {
+      "source": "secondsky/claude-skills",
+      "sourceType": "github",
+      "computedHash": "7c87010374786ac417726744a8d723307ab35ccfdf65cd1f2f6c50feefded178"
+    }
+  }
+}

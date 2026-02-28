@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "products": "Products"
+  },
+  "pages": {
+    "privacyPolicy": "Privacy Policy",
+    "returnPolicy": "Return Policy"
+  },
+  "common": {
+    "downloadApp": "Download App",
+    "subscribe": "Subscribe",
+    "enterEmail": "Enter your email",
+    "subscribeNewsletter": "Subscribe to our newsletter"
+  },
+  "footer": {
+    "builtWith": "Built with Nuxt UI"
+  }
+}

@@ -1,4 +1,9 @@
 <script setup lang="ts">
+const { locale } = useI18n()
+const head = useLocaleHead({
+  dir: true,
+  seo: true
+})
 const colorMode = useColorMode()
 
 const color = computed(() => colorMode.value === 'dark' ? '#171717' : 'white')
@@ -9,10 +14,12 @@ useHead({
     { key: 'theme-color', name: 'theme-color', content: color }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', href: '/favicon.ico' },
+    ...(head.value.link || [])
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: head.value.htmlAttrs?.lang || locale.value,
+    dir: (head.value.htmlAttrs?.dir || (locale.value === 'ar' ? 'rtl' : 'ltr')) as 'rtl' | 'ltr'
   }
 })
 

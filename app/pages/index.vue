@@ -1,20 +1,36 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryCollection('content').first())
+import type { ContentArCollectionItem, ContentEnCollectionItem, Collections } from '@nuxt/content'
+
+const { locale } = useI18n()
+
+const collectionMap: Record<string, keyof Collections> = {
+  ar: 'content_ar',
+  en: 'content_en'
+}
+
+const collectionName = computed(() => collectionMap[locale.value as 'ar' | 'en'] ?? 'content_ar')
+
+const { data: page } = await useAsyncData(`index-${locale.value}`, () =>
+  queryCollection(collectionName.value as keyof Collections).path(`/${locale.value}`).first()
+)
+
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
+const pageData = page.value as ContentArCollectionItem | ContentEnCollectionItem
+
 useSeoMeta({
-  title: page.value.seo?.title || page.value.title,
-  ogTitle: page.value.seo?.title || page.value.title,
-  description: page.value.seo?.description || page.value.description,
-  ogDescription: page.value.seo?.description || page.value.description
+  title: pageData.seo?.title || pageData.title,
+  ogTitle: pageData.seo?.title || pageData.title,
+  description: pageData.seo?.description || pageData.description,
+  ogDescription: pageData.seo?.description || pageData.description
 })
 </script>
 
 <template>
   <div
-    v-if="page"
+    v-if="pageData"
     class="relative"
   >
     <div class="hidden lg:block">
@@ -26,8 +42,8 @@ useSeoMeta({
     </div>
 
     <UPageHero
-      :description="page.description"
-      :links="page.hero.links"
+      :description="pageData.description"
+      :links="pageData.hero.links"
       :ui="{
         container: 'md:pt-18 lg:pt-20',
         title: 'max-w-3xl mx-auto'
@@ -39,15 +55,15 @@ useSeoMeta({
 
       <template #title>
         <MDC
-          :value="page.title"
+          :value="pageData.title"
           unwrap="p"
         />
       </template>
     </UPageHero>
 
     <UPageSection
-      :description="page.section.description"
-      :features="page.section.features"
+      :description="pageData.section.description"
+      :features="pageData.section.features"
       orientation="horizontal"
       :ui="{
         container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
@@ -57,18 +73,18 @@ useSeoMeta({
     >
       <template #title>
         <MDC
-          :value="page.section.title"
+          :value="pageData.section.title"
           class="sm:*:leading-11"
         />
       </template>
       <img
-        :src="page.section.images.desktop"
-        :alt="page.section.title"
+        :src="pageData.section.images.desktop"
+        :alt="pageData.section.title"
         class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl"
       >
       <img
-        :src="page.section.images.mobile"
-        :alt="page.section.title"
+        :src="pageData.section.images.mobile"
+        :alt="pageData.section.title"
         class="block lg:hidden 2xl:block 2xl:w-full 2xl:max-w-2xl"
       >
     </UPageSection>
@@ -77,8 +93,8 @@ useSeoMeta({
 
     <UPageSection
       id="features"
-      :description="page.features.description"
-      :features="page.features.features"
+      :description="pageData.features.description"
+      :features="pageData.features.features"
       :ui="{
         title: 'text-left @container relative flex',
         description: 'text-left'
@@ -89,7 +105,7 @@ useSeoMeta({
       <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <template #title>
         <MDC
-          :value="page.features.title"
+          :value="pageData.features.title"
           class="*:leading-9"
         />
         <div class="hidden @min-[1020px]:block">
@@ -106,7 +122,7 @@ useSeoMeta({
 
     <UPageSection
       id="steps"
-      :description="page.steps.description"
+      :description="pageData.steps.description"
       class="relative overflow-hidden"
     >
       <template #headline>
@@ -117,12 +133,12 @@ useSeoMeta({
         />
       </template>
       <template #title>
-        <MDC :value="page.steps.title" />
+        <MDC :value="pageData.steps.title" />
       </template>
 
       <template #features>
         <UPageCard
-          v-for="(step, index) in page.steps.items"
+          v-for="(step, index) in pageData.steps.items"
           :key="index"
           class="group"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
@@ -150,12 +166,12 @@ useSeoMeta({
     <UPageSection
       id="pricing"
       class="mb-32 overflow-hidden"
-      :title="page.pricing.title"
-      :description="page.pricing.description"
+      :title="pageData.pricing.title"
+      :description="pageData.pricing.description"
       :ui="{ title: 'text-left @container relative', description: 'text-left' }"
     >
       <template #title>
-        <MDC :value="page.pricing.title" />
+        <MDC :value="pageData.pricing.title" />
 
         <div class="hidden @min-[1120px]:block">
           <UColorModeImage
@@ -168,7 +184,7 @@ useSeoMeta({
 
       <UPricingPlans scale>
         <UPricingPlan
-          v-for="(plan, index) in page.pricing.plans"
+          v-for="(plan, index) in pageData.pricing.plans"
           :key="index"
           :title="plan.title"
           :description="plan.description"
@@ -186,9 +202,9 @@ useSeoMeta({
 
     <UPageSection
       id="testimonials"
-      :title="page.testimonials.title"
-      :description="page.testimonials.description"
-      :items="page.testimonials.items"
+      :title="pageData.testimonials.title"
+      :description="pageData.testimonials.description"
+      :items="pageData.testimonials.items"
     >
       <template #headline>
         <UColorModeImage
@@ -198,13 +214,13 @@ useSeoMeta({
         />
       </template>
       <template #title>
-        <MDC :value="page.testimonials.title" />
+        <MDC :value="pageData.testimonials.title" />
       </template>
 
       <UContainer>
         <UPageColumns class="xl:columns-3">
           <UPageCard
-            v-for="(testimonial, index) in page.testimonials.items"
+            v-for="(testimonial, index) in pageData.testimonials.items"
             :key="index"
             variant="subtle"
             :description="testimonial.quote"
@@ -224,12 +240,12 @@ useSeoMeta({
     <USeparator />
 
     <UPageCTA
-      v-bind="page.cta"
+      v-bind="pageData.cta"
       variant="naked"
       class="overflow-hidden @container"
     >
       <template #title>
-        <MDC :value="page.cta.title" />
+        <MDC :value="pageData.cta.title" />
 
         <div class="@max-[1280px]:hidden">
           <UColorModeImage
