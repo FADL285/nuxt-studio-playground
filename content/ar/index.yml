@@ -158,8 +158,8 @@ testimonials:
           src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux
     - quote: أخيراً، أداة إنتاجية تفهم المطورين. ساعدتني ميزات الذكاء الاصطناعي في تحديد ساعات البرمجة المثلى والآن أنجز أكثر في وقت أقل.
       user:
-        name: Benjamin Canac
-        description: مطور واجهات أمامية أول
+        name: Mohamed Fadk
+        description: مطور واجهات أمامية
         target: _blank
         avatar:
-          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac
+          src: https://avatars.githubusercontent.com/u/53804570?v=4

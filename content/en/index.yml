@@ -139,7 +139,7 @@ steps:
         light: /images/light/track.svg
         dark: /images/dark/track.svg
 testimonials:
-  title: Join thousands of productive [developers]{.text-primary}
+  title: Join thousands of productive [developers]{.text-primary}.
   description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
   items:
     - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
@@ -158,8 +158,8 @@ testimonials:
           src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux
     - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
       user:
-        name: Benjamin Canac
+        name: Mohamed Fadl
         description: Senior Frontend Developer
         target: _blank
         avatar:
-          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac
+          src: https://avatars.githubusercontent.com/u/53804570?v=4
