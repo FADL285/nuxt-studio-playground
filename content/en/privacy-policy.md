@@ -31,7 +31,9 @@ We use the collected information for the following purposes:
 
 We implement appropriate security measures to protect your personal information from unauthorized access, modification, disclosure, or destruction.
 
-## Your Rights
+::card
+Testing body
+::
 
 You have the right at any time to:
 
